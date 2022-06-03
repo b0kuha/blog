@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git基本使用 | 随想笔录</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/blog/favicon.ico">
+    <meta name="description" content="随便写点啥">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.c1c5d13a.css" as="style"><link rel="preload" href="/blog/assets/js/app.fd8670a3.js" as="script"><link rel="preload" href="/blog/assets/js/3.75445cf0.js" as="script"><link rel="preload" href="/blog/assets/js/1.790ef8e2.js" as="script"><link rel="preload" href="/blog/assets/js/13.9a67bbf5.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.00307150.js"><link rel="prefetch" href="/blog/assets/js/11.9858e069.js"><link rel="prefetch" href="/blog/assets/js/12.fcfd647e.js"><link rel="prefetch" href="/blog/assets/js/14.39368497.js"><link rel="prefetch" href="/blog/assets/js/15.93736104.js"><link rel="prefetch" href="/blog/assets/js/16.3f71640c.js"><link rel="prefetch" href="/blog/assets/js/17.0082b033.js"><link rel="prefetch" href="/blog/assets/js/18.2fddb7f3.js"><link rel="prefetch" href="/blog/assets/js/19.9bd8bcaa.js"><link rel="prefetch" href="/blog/assets/js/4.e3d6f006.js"><link rel="prefetch" href="/blog/assets/js/5.8a6f091f.js"><link rel="prefetch" href="/blog/assets/js/6.622ee4ee.js"><link rel="prefetch" href="/blog/assets/js/7.1ceab800.js"><link rel="prefetch" href="/blog/assets/js/8.91b00875.js"><link rel="prefetch" href="/blog/assets/js/9.a1d3fd86.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.c1c5d13a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1aefc0b4><div data-v-1aefc0b4><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1aefc0b4 data-v-1aefc0b4><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-1aefc0b4 data-v-1aefc0b4><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>随想笔录</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>随便写点啥</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>Viego</span>
+            
+          <span data-v-25ba6db2>2021 - </span>
+          2022
+        </a></span></div></div> <div class="hide" data-v-1aefc0b4><header class="navbar" data-v-1aefc0b4><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/logo.png" alt="随想笔录" class="logo"> <span class="site-name">随想笔录</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/git/" class="nav-link"><i class="undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/mac/" class="nav-link"><i class="undefined"></i>
+  mac
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/react/" class="nav-link"><i class="undefined"></i>
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/axios/" class="nav-link"><i class="undefined"></i>
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/javascript/" class="nav-link"><i class="undefined"></i>
+  javascript
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/b0kuha" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1aefc0b4></div> <aside class="sidebar" data-v-1aefc0b4><div class="personal-info-wrapper" data-v-39576ba9 data-v-1aefc0b4><img src="/blog/avatar.png" alt="author-avatar" class="personal-img" data-v-39576ba9> <h3 class="name" data-v-39576ba9>
+    Viego
+  </h3> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>9</h3> <h6 data-v-39576ba9>文章</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>11</h3> <h6 data-v-39576ba9>标签</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/git/" class="nav-link"><i class="undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/mac/" class="nav-link"><i class="undefined"></i>
+  mac
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/react/" class="nav-link"><i class="undefined"></i>
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/axios/" class="nav-link"><i class="undefined"></i>
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/javascript/" class="nav-link"><i class="undefined"></i>
+  javascript
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/b0kuha" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-1aefc0b4><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>Git基本使用</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>Viego</span>
+            
+          <span data-v-25ba6db2>2021 - </span>
+          2022
+        </a></span></div></div> <div data-v-1aefc0b4><main class="page"><section><div class="page-title"><h1 class="title">Git基本使用</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>Viego</span></i> <i class="iconfont reco-date" data-v-f875f3fc><span data-v-f875f3fc>2022/1/28</span></i> <!----> <i class="tags iconfont reco-tag" data-v-f875f3fc><span class="tag-item" data-v-f875f3fc>git</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="安装下载"><a href="#安装下载" class="header-anchor">#</a> 安装下载</h2> <ol><li>使用 Homebrew 安装</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>brew <span class="token function">install</span> <span class="token function">git</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="2"><li>官网下载</li></ol> <p>https://git-scm.com/</p> <h2 id="基础配置"><a href="#基础配置" class="header-anchor">#</a> 基础配置</h2> <p>配置用户名和邮箱</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">git</span> config --global user.name <span class="token string">'xxx'</span>
+<span class="token function">git</span> config --global user.email <span class="token string">'xxx@qq.com'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>查看配置</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">git</span> config -l
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="常用命令"><a href="#常用命令" class="header-anchor">#</a> 常用命令</h2> <ul><li>拉取分支</li></ul> <p>将远程仓库的分支拉取到本地，可以改名，但不建议</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">git</span> fetch origin 远程分支名:本地分支名
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>拉取代码</li></ul> <p>推送代码前记得先拉取代码到最新</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">git</span> pull origin 远程分支名
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>推送代码</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">git</span> push origin 远程分支名
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>查看提交记录</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 查看所有记录</span>
+<span class="token function">git</span> log
+<span class="token comment"># 查看最近5条记录</span>
+<span class="token function">git</span> log --oneline -5
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>查看状态</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">git</span> status
+<span class="token function">git</span> status -s
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>回退修改</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">git</span> restore
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>查看修改的文件</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">git</span> <span class="token function">diff</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>根据版本号回退</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">git</span> reset --hard 版本号
+<span class="token comment"># 回退到上一个版本</span>
+<span class="token function">git</span> reset HEAD~
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>创建分支</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">git</span> branch xxx
+<span class="token comment"># 以当前分支为基准创建新分支并切换到新分支</span>
+<span class="token function">git</span> checkout -b xxx
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>删除分支</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">git</span> branch -d xxx
+<span class="token comment"># 强制删除</span>
+<span class="token function">git</span> branch -D xxx
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>克隆仓库</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">git</span> clone https://xxxxxx.git
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="基本使用步骤"><a href="#基本使用步骤" class="header-anchor">#</a> 基本使用步骤</h2> <ol><li>创建一个工作目录并初始化 git</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 1. 创建文件夹并进入</span>
+<span class="token function">mkdir</span> workspace <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> workspace
+<span class="token comment"># 2. 使用git初始化文件夹</span>
+<span class="token function">git</span> init
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ol start="2"><li>新建文件，将其加入 git 缓存区</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 创建一个文件</span>
+<span class="token function">touch</span> index.html
+<span class="token comment"># 加入缓存区</span>
+<span class="token function">git</span> <span class="token function">add</span> index.html
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>加入缓存区常用指令(将所有修改过的文件加入缓存区)</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">git</span> <span class="token function">add</span> -A
+<span class="token comment"># OR</span>
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ol start="3"><li>提交到本地仓库</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">git</span> commit -m <span class="token string">'初始化提交'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="4"><li>推送到远程开发分支</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 推送代码前记得先拉取远程代码</span>
+<span class="token function">git</span> pull origin development
+<span class="token comment"># 推送到远程分支</span>
+<span class="token function">git</span> push origin development
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>在实际开发中经常需要将自己的分支合并到开发分支再推送</p> <p>例如：团队中的远程开发分支为 development，本地以 development 创建分支</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 以development为基础创建本地开发分支</span>
+<span class="token function">git</span> checkout -b dev.pc.xxx
+<span class="token comment"># 在dev.pc.xxx分支下开发需求并commit到本地仓库</span>
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit -m <span class="token string">'新功能开发完毕'</span>
+<span class="token comment"># 切换到development分支</span>
+<span class="token function">git</span> checkout development
+<span class="token comment"># 拉取最新代码并合并我们自己的分支</span>
+<span class="token function">git</span> pull origin development
+<span class="token function">git</span> merge --no-ff dev.pc.xxx
+<span class="token function">git</span> push	origin development
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="解决冲突"><a href="#解决冲突" class="header-anchor">#</a> 解决冲突</h2> <p>首先定位冲突，使用<code>git status -s</code>可以查看产生冲突的文件，通常可以在 IDE 中查看</p> <ol><li>定位</li></ol> <p>例如在 webstorm 中使用<code>cmd+f</code>搜索<code>======</code></p> <ol start="2"><li>修复冲突</li></ol> <p>根据实际情况删除或保留代码</p> <ol start="3"><li>提交</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>提交后会进入 vim 编辑器 保存退出即可（<code>:wq</code>）</p></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-cb1513f6><li class="level-2" data-v-cb1513f6><a href="/blog/blogs/20220128.html#安装下载" class="sidebar-link reco-side-安装下载" data-v-cb1513f6>安装下载</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/blogs/20220128.html#基础配置" class="sidebar-link reco-side-基础配置" data-v-cb1513f6>基础配置</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/blogs/20220128.html#常用命令" class="sidebar-link reco-side-常用命令" data-v-cb1513f6>常用命令</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/blogs/20220128.html#基本使用步骤" class="sidebar-link reco-side-基本使用步骤" data-v-cb1513f6>基本使用步骤</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/blogs/20220128.html#解决冲突" class="sidebar-link reco-side-解决冲突" data-v-cb1513f6>解决冲突</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/blog/assets/js/app.fd8670a3.js" defer></script><script src="/blog/assets/js/3.75445cf0.js" defer></script><script src="/blog/assets/js/1.790ef8e2.js" defer></script><script src="/blog/assets/js/13.9a67bbf5.js" defer></script>
+  </body>
+</html>
